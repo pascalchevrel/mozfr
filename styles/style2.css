@@ -1,0 +1,131 @@
+
+body  {
+background: white url('/styles/img/background-feature-green.jpg') repeat-x scroll center top;
+font-family: georgia, serif;
+}
+
+div#entete {
+
+    background: transparent url('/styles/img/background-whatismozilla.png') no-repeat top right;
+    height:245px;
+    max-width:950px
+}
+
+h1 {
+background: url('/styles/img/commfrancophone.png') no-repeat;
+text-indent:-1000em;
+height:50px;
+}
+
+h2, h3{
+
+font-weight:normal;
+letter-spacing:2px;
+padding-left:1em;
+}
+
+div#contenu {
+margin-top:-50px;
+}
+
+
+div.boite {
+background-color:white;
+width:200px;
+float:left;
+margin: 10px;
+padding:0 5px;
+min-height:18em;
+-moz-border-radius : 10px 10px 5px 5px;
+position:relative;
+background:white url('/styles/img/sub-feature-bottom.png') repeat-x bottom ;
+opacity:0.7;
+}
+
+div.boite:hover {
+opacity:1;
+}
+
+
+hr.clear {
+clear:both;
+visibility:hidden;
+border:none;
+height:0;
+line-height:0;
+}
+
+p {
+color:black;
+}
+
+p.lien {
+position:absolute;
+bottom:0;
+text-align:center;
+width:99%;
+margin-left:0;
+}
+
+a {
+text-decoration:none;
+
+}
+
+:focus
+{
+  -moz-outline-style: none;
+}
+
+p.desc {
+
+padding:0 10px;
+
+}
+
+p.desc a {
+color:black;
+display:block;
+min-height:10em;
+}
+
+#contenant {
+
+width:950px;
+margin:auto;
+
+}
+
+
+
+p.lien a.frenchmoz {
+width:100%;
+display:block;
+background: transparent url('/styles/img/frenchmoz.png') no-repeat center;
+line-height:160px;
+text-indent:-1000em;
+}
+
+p.lien a.geckozone {
+width:100%;
+display:block;
+background: transparent url('/styles/img/geckozone.png') no-repeat center;
+line-height:160px;
+text-indent:-1000em;
+}
+p.lien a.xulfr {
+width:100%;
+display:block;
+background: transparent url('/styles/img/xulfr.png') no-repeat center;
+line-height:160px;
+text-indent:-1000em;
+}
+
+p#contact {
+width:700px;
+text-align:right;
+}
+
+p#contact img {
+display:none;
+}
