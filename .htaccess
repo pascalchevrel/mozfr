@@ -1,0 +1,6 @@
+
+# on veut parser les fichiers .html en php
+AddType application/x-httpd-php .html
+
+# les fichiers *.inc.html ne doivent pas être accessibles directement
+RedirectMatch permanent ^/(.*).inc.html? http://www.mozfr.org

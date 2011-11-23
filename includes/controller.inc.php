@@ -19,6 +19,11 @@ if( !in_array($_SERVER['SERVER_NAME'], array('mozfr.org', 'www.mozfr.org')) ) {
     $config['server_name'] = 'www.monsite-mozfr.org';
 }
 
+
+// our special functions
+include $config['file_root'] . 'includes/functions.inc.php';
+
+
 // make sure we have a few variables defined to avoid php warnings if they don't exist
 $url_site  = 'http://' . $config['server_name'];
 $theme     = 'asterix';
