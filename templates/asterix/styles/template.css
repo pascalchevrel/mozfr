@@ -1,38 +1,78 @@
-
-@font-face {
-  font-family: "Vibrocentric";
-  src: url('vibrocen.ttf') format("truetype");
-}
-
 body  {
-background: white url('http://planete.mozfr.org/custom/style/img/bg_body_0.jpg') no-repeat scroll left top;
-font-family: sans-serif;
+    background: white url('http://planete.mozfr.org/custom/style/img/bg_body_0.jpg') no-repeat scroll left top;
+    font-family: Verdana, sans-serif;
+    font-size:14px;
+    margin:0;
 }
 
 h2, h3 {
     color:#B72822;
-    font-family:'Vibrocentric',Georgia,Times,"Times New Roman",serif !important;
+    font-family: Georgia, Times, serif;
 }
 
-h1#entete,
-div#contenu {
-    max-width:950px;
+h2 {
+    font-size:30px;
 }
 
-h1#entete {
-    margin: 0 -20px;
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
-    border-bottom: 8px solid #C5534E;
-    color: white;
-    font-size: 40px;
-    height: 50px;
-    line-height: 50px;
-    padding: 10px;
-    text-shadow: 1px 1px 5px black;
+
+h3 {
+    font-size:20px;
+}
+
+
+#contenant {
+    margin:auto;
+}
+
+#page {
+    margin: 45px 30px 0 95px;
+    position: relative;
+}
+
+#page #header {
+  min-height:81px;
+  border-bottom:7px solid #B72822;
+  margin-top:10px;
+}
+
+#page #header #top {
+  min-height:53px;
+  line-height:53px;
+  padding-left:25px;
+  font-size: 35px;
+  
+}
+
+
+h1#top {
+    text-shadow: 1px 1px 10px rgba(50,100,255,0.2);
+    color: rgba(255,255,255,0.7);
+    background-color: black;
+}
+
+h1#top, #footer, #top_menu {
+    margin: 0;
+}
+
+
+#footer {
+    height: 100px;
+    border-top: 7px solid #B72822;
+    margin-top: 50px;
+    padding: 30px 10px 0px 10px;
+    background: black url("/img/logo-mc.png") no-repeat scroll right 10px;
+    font-size:0.8em;
+}
+
+#footer p {
+    color: rgba(255,255,255,0.6);
+}
+
+#footer p a {
+    color: orange;
 }
 
 #top_menu {
-    margin: 0 -20px 50px -20px;
     padding:0;
 }
 
@@ -58,8 +98,7 @@ h1#entete {
 }
 
 div#message {
-   background: rgba(255,255,255,0.7);
-   height:100px;
+   height:200px;
 }
 
 div#message h2, div#message h3 {
@@ -69,24 +108,50 @@ div#message h2, div#message h3 {
 
 div#contenu {
     margin:auto;
-    margin-bottom: 100px;
-    background-color: rgba(255,255,255,0.7);
-    padding: 0 20px;
+    background: -moz-linear-gradient(center top , white 0%, #EAEAEA 100%) repeat scroll 0 0 transparent;
 }
+
+#page #content {
+  position:relative;
+  margin-right:240px;
+  padding: 10px;
+  margin-top:30px;
+  background: -moz-linear-gradient(top, white 0%, #eaeaea 100%);
+  border-bottom: 3px solid #B72822;
+  border-top:    4px solid #B72822;
+  border-radius: 10px;
+  -moz-box-shadow: 0px 1px 10px 1px gray;
+  min-height: 600px;
+}
+
+#page #sidebar {
+    background: none repeat scroll 0 0 white;
+    border-bottom: 3px solid #B72822;
+    border-radius: 10px 10px 10px 10px;
+    border-top: 4px solid #B72822;
+    box-shadow: 0 1px 10px 1px gray;
+    font-size: 80%;
+    padding: 10px 5px 10px 10px;
+    position: absolute;
+    right: 10px;
+    top: 117px;
+    width: 200px;
+}
+
 
 div.boite {
     border-radius:3px 3px 3px 3px;
-    -moz-box-shadow:0 1px 5px #888888;
+    box-shadow:0 1px 5px #888888;
     background:none repeat scroll 0 0 white;
     border-bottom:3px solid #6EAEC7;
     border-top:4px solid #6EAEC7;
     opacity:0.8;
     padding:10px 5px 10px 10px;
-    width:28%;
+    width:40%;
     margin-right:5%;
     float:left;
     position:relative;
-    min-height:250px;
+    min-height:320px;
 }
 
 div.boite:hover {
@@ -110,11 +175,7 @@ p {
 }
 
 p.lien {
-    position:absolute;
-    bottom:0;
     text-align:center;
-    width:99%;
-    margin-left:0;
 }
 
 a {
@@ -128,39 +189,8 @@ p.desc {
 p.desc a {
     color:black;
     display:block;
-    min-height:10em;
 }
 
-
-#contenant {
-    width:950px;
-    margin:auto;
-    padding:0 100px;
-}
-
-a.frenchmoz {
-    width:100%;
-    display:block;
-    background: transparent url('img/frenchmoz.png') no-repeat center;
-    line-height:160px;
-    text-indent:-1000em;
-}
-
-a.geckozone {
-    width:100%;
-    display:block;
-    background: transparent url('img/geckozone.png') no-repeat center;
-    line-height:160px;
-    text-indent:-1000em;
-}
-
-a.xulfr {
-    width:100%;
-    display:block;
-    background: transparent url('img/xulfr.png') no-repeat center;
-    line-height:160px;
-    text-indent:-1000em;
-}
 
 p#contact {
     width:700px;
@@ -173,7 +203,7 @@ p#contact img {
 
 #home  #lien1,
 #manifesto #lien5 {
-    background-color: rgba(0,0,0,0.1)
+    background-color: rgba(155, 155, 155, 0.8);
 }
 
 #home  #lien1 a,

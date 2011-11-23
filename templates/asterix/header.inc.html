@@ -5,7 +5,7 @@
 <title><?=$title?></title>
 <meta charset="UTF-8">
 
-<link rel="stylesheet" type="text/css" href="<?=$url_site?>/styles/style3.css" media="screen" title="rouge">
+<link rel="stylesheet" type="text/css" href="<?=$url_site?>/templates/<?=$theme?>/styles/template.css" media="screen" title="rouge">
 <link rel="icon" href="http://www.mozilla.com/favicon.ico" type="image/ico">
 
 </head>
@@ -13,16 +13,17 @@
 
 <div id="contenant">
 
-    <div id="contenu">
-        <h1 id="entete">Communauté Mozilla Francophone</h1>
-        <ul id="top_menu">
-            <li id="lien1"><a href="<?=$url_site?>">Accueil</a></li>
-            <li id="lien2"><a href="http://planete.mozfr.org/">Planète</a></li>
-            <li id="lien3"><a href="<?=$url_site?>/wiki/">Wiki</a></li>
-            <li id="lien4"><a href="http://planete.mozfr.org/">Assistance</a></li>
-            <li id="lien5"><a href="<?=$url_site?>/manifesto/">À propos</a></li>
-        </ul>
+    <div id="page">
 
+        <div id="header">
+            <h1 id="top">Communauté Mozilla Francophone</h1>
+            <ul id="top_menu">
+                <li id="lien1"><a href="<?=$url_site?>">Accueil</a></li>
+                <li id="lien2"><a href="http://planete.mozfr.org/">Planète</a></li>
+                <li id="lien3"><a href="<?=$url_site?>/wiki/">Wiki</a></li>
+                <li id="lien4"><a href="http://geckozone.org/forum/">Assistance</a></li>
+                <li id="lien5"><a href="<?=$url_site?>/manifesto/">À propos</a></li>
+            </ul>
+        </div>
 
-
-
+        <div id="content">
